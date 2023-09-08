@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView ,DateDetailView
+from django.views.generic import ListView ,DetailView
 from.models import Product , ProductImages , Brand , Review
 
 
@@ -11,5 +11,5 @@ class ProductList(ListView):
 
 
 
-class ProductDetail(DateDetailView):
+class ProductDetail(DetailView):
     model = Product   
